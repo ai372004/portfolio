@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Islam Mohamed - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e2e2e2, #ffffff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 70px;
+        }
+
+        section h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #0077b6;
+        }
+
+        section h1::after {
+            content: "";
+            width: 120px;
+            height: 4px;
+            background-color: #ffa500;
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background-color: #0077b6;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card h2 {
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .skill-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skill-card ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-card ul li::before {
+            content: "•";
+            color: #ffdd00;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+            border: 4px solid #0077b6;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects ul,
+        .certificates ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .projects ul li,
+        .certificates ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .projects ul li a,
+        .certificates ul li a {
+            color: #0077b6;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        .projects ul li a:hover,
+        .certificates ul li a:hover {
+            color: #ffdd00;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        .contact-info a {
+            color: #0077b6;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #ffdd00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, I'm Ahmed Islam Mohamed, a Data Engineer and Web Scraper.</p>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="C:\Users\ahmed\OneDrive - Alexandria University\Pictures\WhatsApp Image 2024-09-22 at 14.57.14_c99b70c4.jpg"
+            alt="Ahmed Islam Mohamed">
+        <p>As a Data Engineer with a background in Data Science, I specialize in building efficient data pipelines and
+            transforming raw data into actionable insights. I am passionate about solving complex problems and enjoy
+            collaborating with cross-functional teams to deliver impactful projects.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>Databases</li>
+                    <li>Data Warehousing</li>
+                    <li>ETL</li>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Data Pipelines</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h2>Personal Skills</h2>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Leadership</li>
+                    <li>Attention to Detail</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <ul>
+            <li><a href="https://github.com/ai372004/SQL.git" target="_blank">SQL Project</a></li>
+            <li><a href="https://github.com/ai372004/SSIS-.git" target="_blank">SSIS Project</a></li>
+            <li><a href="https://github.com/ai372004/cloud-assigment.git" target="_blank">Cloud Assignment Project</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <h1>Certificates</h1>
+        <ul>
+            <li><a href="https://coursera.org/share/5e795305f1ce08affab5e21ec3789951" target="_blank">Certificate 1:
+                    Data Engineering</a></li>
+            <li><a href="https://coursera.org/share/afea5c3af4a4b2094b729eed0c34126b" target="_blank">Certificate 2:
+                    Advanced Data Engineering</a></li>
+            <li><a href="https://coursera.org/share/0f25e19d5cadd47a165c85c6b27d9c9f" target="_blank">Certificate 3:
+                    Advanced Python for Data Engineering</a></li>
+            <li><a href="https://coursera.org/share/afea5c3af4a4b2094b729eed0c34126b" target="_blank">Certificate 4:
+                    Project by Python for Data Engineering </a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:ahmedislam8900@gmail.com">ahmedislam8900@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-islam-68735a251" target="_blank">LinkedIn Profile</a>
+        </p>
+        <p>GitHub: <a href="https://github.com/ai372004" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ahmed Islam Mohamed</p>
+    </footer>
+</body>
+
+</html>
